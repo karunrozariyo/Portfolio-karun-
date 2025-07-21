@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karun Rozariyo | Portfolio</title>
+  
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Spline Viewer Script -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.33/build/spline-viewer.js"></script>
+
+  <!-- Inline Style for Spline Background -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .spline-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .spline-bg spline-viewer {
+      width: 100%;
+      height: 100%;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🌌 Spline Fullscreen Background -->
+  <div class="spline-bg">
+    <spline-viewer url="https://prod.spline.design/JM3qX6o-Tv-DB3B5/scene.splinecode"></spline-viewer>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">Karun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#papers">Papers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#workshops">Workshops</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section d-flex flex-column justify-content-center align-items-center text-center min-vh-100">
+    <div class="hero-content position-relative z-1">
+      <h1 class="display-2 fw-bold mb-2 animated-gradient-text">Karun Rozariyo</h1>
+      <h2 class="mb-3 animated-typewriter">Student| UX Enthusiast</h2>
+      <p class="lead mb-4">Product Development Enthusiast | Frontend Specialist | UX Advocate</p>
+      <div class="contact-info d-flex flex-wrap justify-content-center gap-3">
+        <span><i class="bi bi-telephone"></i> +91 98765 43210</span>
+        <span><i class="bi bi-envelope"></i> karun.rozariyo@email.com</span>
+        <span><i class="bi bi-geo-alt"></i> Erode, Tamil Nadu, India</span>
+      </div>
+    </div>
+    <!-- Hero Section (add after hero-content) -->
+    <div class="hero-social mt-3 d-flex justify-content-center gap-3">
+      <a href="https://linkedin.com/" target="_blank" class="text-decoration-none social-glow"><i class="bi bi-linkedin fs-3"></i></a>
+      <a href="https://github.com/" target="_blank" class="text-decoration-none social-glow"><i class="bi bi-github fs-3"></i></a>
+      <a href="mailto:karun.rozariyo@email.com" class="text-decoration-none social-glow"><i class="bi bi-envelope fs-3"></i></a>
+    </div>
+    <a href="#" class="btn btn-resume mt-4">Download Resume <i class="bi bi-download ms-2"></i></a>
+    <div class="hero-mission mt-3 text-center">
+      <p class="fs-5 fw-semibold">Driven to build seamless digital experiences that delight users and empower businesses.</p>
+    </div>
+  </section>
+
+  <!-- Add SVG wave divider after hero and before About -->
+  <div class="section-divider"><svg viewBox="0 0 1440 100" width="100%" height="100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#23263a" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path></svg></div>
+
+  <!-- About -->
+  <section id="about" class="container py-5 text-center">
+    <h3 class="mb-3 section-title">About Me</h3>
+    <p class="fs-5">I am a software enthusiast with a strong foundation in frontend technologies and a deep passion for product development. I thrive on creating seamless user experiences and am always eager to learn and grow in the ever-evolving tech landscape.</p>
+    <!-- About Quick Facts (add after about p) -->
+    <div class="row justify-content-center mt-4 mb-2">
+      <div class="col-6 col-md-3 mb-2">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-award fs-2 mb-2 text-gradient"></i>
+          <div class="fs-3 fw-bold">2+</div>
+          <div class="text-muted">Years Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-2">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-lightbulb fs-2 mb-2 text-gradient"></i>
+          <div class="fs-3 fw-bold">6+</div>
+          <div class="text-muted">Projects</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-2">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-cpu fs-2 mb-2 text-gradient"></i>
+          <div class="fs-3 fw-bold">10+</div>
+          <div class="text-muted">Technologies</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-2">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-award fs-2 mb-2 text-gradient"></i>
+          <div class="fs-3 fw-bold">3</div>
+          <div class="text-muted">Certifications</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="bg-section py-5">
+    <div class="container">
+      <h3 class="mb-4 section-title text-center">Education</h3>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-5">
+          <div class="edu-card p-4 h-100">
+            <h5 class="mb-1">M.Sc. Software Systems</h5>
+            <p class="mb-0">Kongu Engineering College</p>
+            <small class="text-muted">2022 - Present</small>
+            <!-- Education: Add coursework and achievements inside each edu-card -->
+            <!-- Example for first edu-card -->
+            <ul class="mt-2 mb-0 small text-start">
+              <li>Relevant Coursework: Web Technologies, Data Structures, UX Design</li>
+              <li>Achievements: Dean's List, Hackathon Finalist</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="edu-card p-4 h-100">
+            <h5 class="mb-1">High School</h5>
+            <p class="mb-0">Kongu Engineering College</p>
+            <small class="text-muted">Graduated 2022</small>
+            <!-- Example for second edu-card -->
+            <ul class="mt-2 mb-0 small text-start">
+              <li>Relevant Coursework: Computer Science, Mathematics</li>
+              <li>Achievements: School Topper</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section: Center soft skills, tools, and languages below main skill cards -->
+  <section id="skills" class="container py-5">
+    <h3 class="mb-4 section-title text-center">Skills</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-10">
+        <div class="row g-3 justify-content-center">
+          <!-- Skill cards here (unchanged) -->
+        </div>
+        <div class="row justify-content-center mt-5 text-center">
+          <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+            <div class="soft-skills w-100 mb-3">
+              <h5 class="mb-3">Soft Skills</h5>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <span class="badge soft-skill">Team Work</span>
+                <span class="badge soft-skill">Time Management</span>
+                <span class="badge soft-skill">Leadership</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+            <h6 class="fw-bold mb-3">Tools & Technologies</h6>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+              <span class="badge">VS Code</span>
+              <span class="badge">Git</span>
+              <span class="badge">Figma</span>
+              <span class="badge">Postman</span>
+              <span class="badge">Linux</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center">
+            <h6 class="fw-bold mb-3">Languages</h6>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+              <span class="badge">English</span>
+              <span class="badge">Tamil</span>
+              <span class="badge">Hindi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-section py-5">
+    <div class="container">
+      <h3 class="mb-4 section-title text-center">Projects</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="project-card">
+            <div class="project-header d-flex align-items-center mb-2">
+              <div class="project-icon"><i class="bi bi-window"></i></div>
+              <h5 class="mb-0 ms-2">Marriage Hall Booking System</h5>
+            </div>
+            <p>A web-based application for booking marriage halls with ease.</p>
+            <div><strong>Tech Stack:</strong> <span class="badge">HTML</span> <span class="badge">JavaScript</span></div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-demo">Live Demo</a>
+              <a href="#" class="btn btn-github">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects: Add two more project cards -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8 mb-3">
+          <div class="project-card">
+            <div class="project-header d-flex align-items-center mb-2">
+              <div class="project-icon"><i class="bi bi-laptop"></i></div>
+              <h5 class="mb-0 ms-2">Portfolio Website</h5>
+            </div>
+            <p>A personal portfolio to showcase my work, skills, and journey as a developer.</p>
+            <div><strong>Tags:</strong> <span class="badge">Web App</span> <span class="badge">Personal</span></div>
+            <div class="d-flex gap-2 mt-2">
+              <a href="#" class="btn btn-demo">Live Demo</a>
+              <a href="#" class="btn btn-github">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mb-3">
+          <div class="project-card">
+            <div class="project-header d-flex align-items-center mb-2">
+              <div class="project-icon"><i class="bi bi-hdd-network"></i></div>
+              <h5 class="mb-0 ms-2">Prescripto</h5>
+            </div>
+            <p>A medical prescription management system for doctors and patients.</p>
+            <div><strong>Tags:</strong> <span class="badge">Academic</span> <span class="badge">Web App</span></div>
+            <div class="d-flex gap-2 mt-2">
+              <a href="#" class="btn btn-demo">Live Demo</a>
+              <a href="#" class="btn btn-github">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Papers -->
+  <section id="papers" class="container py-5">
+    <h3 class="mb-4 section-title text-center">Paper Presentations</h3>
+    <ul class="list-group list-group-flush paper-list text-light">
+      <li class="list-group-item bg-transparent"><i class="bi bi-globe"></i> Web Crawler</li>
+      <li class="list-group-item bg-transparent"><i class="bi bi-cpu"></i> Autonomic Computing</li>
+    </ul>
+  </section>
+
+  <!-- Workshops -->
+  <section id="workshops" class="bg-section py-5">
+    <div class="container">
+      <h3 class="mb-4 section-title text-center">Industrial Exposure / Workshops</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="workshop-card">
+            <h5><i class="bi bi-lightbulb"></i> PROBLEM SOLVING Workshop</h5>
+            <p>Attended at Kongu Engineering College</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section (after Papers/Workshops) -->
+  <section id="certifications" class="container py-5">
+    <h3 class="mb-4 section-title text-center">Certifications</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-award fs-2 mb-2 text-gradient"></i>
+          <div class="fw-bold">Responsive Web Design</div>
+          <div class="text-muted small">freeCodeCamp, 2023</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-award fs-2 mb-2 text-gradient"></i>
+          <div class="fw-bold">JavaScript Algorithms</div>
+          <div class="text-muted small">Coursera, 2023</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="glass-card p-3 text-center">
+          <i class="bi bi-award fs-2 mb-2 text-gradient"></i>
+          <div class="fw-bold">UI/UX Design Fundamentals</div>
+          <div class="text-muted small">Udemy, 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (before Footer) -->
+  <section id="testimonials" class="container py-5">
+    <h3 class="mb-4 section-title text-center">Testimonials</h3>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="glass-card p-4">
+            <p class="mb-2">“Karun is a passionate developer who always strives for excellence. His attention to detail and creativity are outstanding.”</p>
+            <div class="fw-bold">— A. Mentor</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="glass-card p-4">
+            <p class="mb-2">“A great team player and problem solver. Karun brings energy and innovation to every project.”</p>
+            <div class="fw-bold">— S. Colleague</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </section>
+
+  <!-- Contact Section (before Footer) -->
+  <section id="contact" class="container py-5">
+    <h3 class="mb-4 section-title text-center">Contact Me</h3>
+    <form class="glass-card p-4 mx-auto" style="max-width: 500px;">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="btn btn-demo w-100">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 border-top border-secondary">
+    <small>&copy; 2024 Karun Rozariyo. All rights reserved.</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+  <script>
+    particlesJS.load('tsparticles', 'particles.json');
+  </script>
+</body>
+</html>
